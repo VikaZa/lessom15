@@ -1,0 +1,48 @@
+
+@media (max-width: 780px){
+  .list{
+     display:none;
+	 position:absolute;
+	 top:100%;
+	 left:50%;
+	 transform:translateX(-50%);
+	 background:$black;
+	 padding:5px 20px;
+   }
+   
+   .list nav,
+   .list .login-button{
+     display:block;
+	 padding:7px 0;
+	 font-size:14px;
+	 text-align:center;
+	 border:2px solid $white;
+   } 
+   
+  label.mobile-menu{
+   display:inline-block;
+   }
+   
+  .header .container{
+    padding:15px 0;
+    justify-content:center;
+	position:relative;
+  }
+  .header .container input[type="checkbox"]:checked ~ .list{
+    display:block;
+  }
+ }
+ @media (max-width: 540px){
+  .top__promo{
+    display:flex;
+	flex-direction:column;
+	align-items:center;
+	width:100%;
+  }
+  .top__promo-item{
+    width:100%; 
+  }
+  .top__promo-item p{
+   padding-bottom:20px;
+  }
+ }
